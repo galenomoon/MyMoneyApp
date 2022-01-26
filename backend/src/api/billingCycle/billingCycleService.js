@@ -23,4 +23,12 @@ BillingCycle.route("get", (req, res, next) => {
   });
 });
 
+// BillingCycle.route("summary", (req, res, next) => {
+//   BillingCycle.aggregate({
+//     $project: {credit: {$sum: "$credits.value"},debt: {$sum: "$debts.value"}},
+//   }, {
+//     $group: {}
+//   });
+// });
+
 module.exports = BillingCycle;
