@@ -13,3 +13,5 @@ server.listen(port, function () {
   console.log(`BACKEND is running on port ${port}
   ~ Sucesso meu Consagrado :D `);
 });
+
+module.exports = server;
