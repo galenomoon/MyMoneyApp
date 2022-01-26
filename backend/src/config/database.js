@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise; // Removing warnings
-module.exports = mongoose.connect("mongodb://localhost/mymoney"); //database name
+module.exports = mongoose.connect("mongodb://localhost/mymoney", {
+  useNewUrlParser: true,
+}); //database name
 
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório";
 mongoose.Error.messages.Number.min =
